@@ -1,6 +1,6 @@
 import java.awt.*;
 import java.awt.event.InputEvent;
-public class ApplicationRobot{
+public class SpaceClickerRobot{
     public static void main(String[]args) throws Exception{
         Robot delia = new Robot();
         delia.mouseMove(1500,430);
@@ -9,6 +9,7 @@ public class ApplicationRobot{
         int x = 0;
         while (x < 1000){
             delia.keyPress(32);
+            delia.keyRelease(32);
             x += 1;
         }
     }
