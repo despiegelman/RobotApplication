@@ -23,11 +23,11 @@ public class CameraRobot{
         delia.mousePress(InputEvent.BUTTON1_DOWN_MASK);
         delia.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
         delia.mouseMove(726,84);
-        delia.delay(250);
+        delia.delay(2500);
         delia.mousePress(InputEvent.BUTTON1_DOWN_MASK);
         delia.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
         delia.mouseMove(722,194);
-        delia.delay(500);
+        delia.delay(2500);
         delia.mousePress(InputEvent.BUTTON1_DOWN_MASK);
         delia.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
@@ -36,6 +36,9 @@ public class CameraRobot{
         File file = new File("myScreenShot.png");
         ImageIO.write(image,"png", file);
         System.out.println("A screenshot is captured to " + file.getPath()); 
-
+        delia.mouseMove(1222,44);
+        delia.delay(2500);
+        delia.mousePress(InputEvent.BUTTON1_DOWN_MASK);
+        delia.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
     }
 }
